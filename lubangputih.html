@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>File Uploaded</title>
+</head>
+
+<body>
+    <h1>File Uploaded</h1>
+    <p>File yang Anda unggah adalah:</p>
+    <p id="file"></p>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const file = urlParams.get('file');
+        document.getElementById('file').innerText = file;
+    </script>
+</body>
+
+</html>
